@@ -1,0 +1,176 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: repeating-linear-gradient( 135deg, rgb(139, 139, 225), rgb(155, 84, 84));
+}
+
+#container{
+    background: repeating-linear-gradient( rgb(155, 84, 84), rgb(139, 139, 225));
+    border-radius: 15px;
+    /* width: 100%; */
+    min-width: 500px;
+    padding: 40px 30px 10px;
+}
+
+/* for heading */
+h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+h1 i{
+    margin-right: 5px;
+}
+/* Styling input and button  */
+#a1{
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 20px;
+}
+
+input{
+    flex: 1;  /* occupy full width of input  */
+    outline: none;
+    border: none;
+    background: transparent;
+    padding: 10px;
+    margin-left: 10px;
+}
+input:hover{
+    transform: scale(1.05);
+}
+
+/* button to add task */
+#a1 button{
+    border: none;
+    outline: none;
+    padding: 8px 25px;
+    background: #efe9e9;
+    border-radius: 20px;
+    font-size: 17px;
+    cursor: pointer;
+}
+#a1 button:hover{
+    background-color: #cec7c7;
+    transform: scale(1.03);
+    transition: 0.1s ease-in-out;
+}
+
+/* targeting all button */
+button:hover{
+    transform: scale(1.03);
+}
+
+/* for complete all and clear all button */
+#a2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#a2 button{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 5px;
+}
+#a2 button:hover{
+    color: #e1d6d6;
+}
+
+
+/* this is for where all task are displayed */
+#a3{
+    min-height: 300px;
+}
+#li  {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    list-style: none;
+    padding: 10px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+li:hover{
+    transform: scale(1.01);
+    color: black;
+    background-color:  rgb(156, 94, 94);  
+}
+
+/* for tags at bottom */
+#a4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+#a4 span{
+    border: none;
+    outline: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#lowerButtons button{
+    border: none;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 5px;
+}
+
+#a4 button:hover{
+    color: #e1d6d6;
+}
+
+#a4 span:hover{
+    color: #e1d6d6;
+}
+
+/* for individual delete button */
+#deleteIndividualTask {
+    background: none;
+    border: none;
+    color: red;
+    font-size: 20px;
+    cursor: pointer;
+    
+}
+
+#deleteIndividualTask:hover{
+    transform: scale(1.5);
+}
+
+/* for checkbox */
+input {
+    margin-right: 10px;
+}
+
+input[type=checkbox]{
+    background-color: #f4f0f0;
+    border-radius: 50%;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    position: relative;
+    top: 5px;
+}
+
+input[type=checkbox]:checked {
+    background-color: black;
+}
